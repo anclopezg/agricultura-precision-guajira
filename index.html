@@ -394,6 +394,8 @@
         <li><a href="#indices">Índices</a></li>
         <li><a href="#fotogrametria">Drones</a></li>
         <li><a href="#qgis">QGIS</a></li>
+        <li><a href="#iot">IoT</a></li>
+        <li><a href="#sin-internet">Sin Internet</a></li>
         <li><a href="#vision">Visión IA</a></li>
         <li><a href="#ml-fund">ML Fundamentos</a></li>
         <li><a href="#ml-ciclo">Ciclo de Vida</a></li>
@@ -423,13 +425,15 @@
                 <span>Agricultura de Precisión</span>
                 <span style="color: var(--green-vintage);">en La Guajira</span>
             </div>
-            <p class="hero-tagline">IA, drones, satélites y QGIS transformando el campo guajiro.<br><strong>Del desierto al mundo con tecnología de punta.</strong></p>
+            <p class="hero-tagline">IA, drones, satélites, IoT y QGIS transformando el campo guajiro.<br><strong>Del desierto al mundo con tecnología de punta.</strong></p>
             <div class="hero-badges">
                 <span class="badge badge-green">IA & Machine Learning</span>
                 <span class="badge badge-blue">Drones & Satélites</span>
                 <span class="badge badge-violet">QGIS & Mapas</span>
                 <span class="badge badge-orange">Índices NDVI</span>
                 <span class="badge badge-red">Fotogrametría</span>
+                <span class="badge badge-green">IoT & Sensores</span>
+                <span class="badge badge-blue">Edge Computing</span>
             </div>
             <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--ink-faded);">Colombia 5.0 · MinTIC · La Guajira, Riohacha</p>
             <a href="#agro" class="ghost-btn" style="margin-top: 1.5rem; display: inline-block;">Explorar</a>
@@ -757,6 +761,165 @@
             <div class="char-bubble">
                 <div class="char-name">🧙 Mago de los Datos</div>
                 "QGIS es como tener un mapa mágico que te muestra dónde el suelo tiene más nutrientes, dónde el agua escasea, y dónde los cultivos están sufriendo. ¡Y es gratis! Un agricultor guajiro con QGIS y un celular tiene más poder que un ministerio entero hace 20 años."
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 6. IoT: SENSORES Y REDES EN EL CAMPO -->
+<!-- ════════════════════════════════════════════ -->
+<section id="iot">
+    <div class="action-lines"></div>
+    <div class="section-inner">
+        <div class="section-label">IoT</div>
+        <h2 class="section-title">Internet de<br>las Cosas<br>en el <span class="highlight">Campo</span></h2>
+        <p class="section-subtitle"><strong>Sensores que hablan entre sí.</strong> Miden humedad, temperatura, viento y conectan tu parcela al mundo digital.</p>
+        
+        <div class="stat-grid grid-3">
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">📡</div>
+                <h4>Sensores en Campo</h4>
+                <p><strong>ESP32 y Arduino</strong> con sensores de bajo costo: humedad del suelo (capacitivo), temperatura (DS18B20), viento (anemómetro), radiación solar (fotodiodo).</p>
+                <p style="font-size: 0.85rem; color: var(--ink-faded); margin-top: 0.5rem;">Cada nodo cuesta <strong>menos de $50.000 COP</strong> y funciona con panel solar.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">📶</div>
+                <h4>LoRa: Comunicación de Larga Distancia</h4>
+                <p>En La Guajira <strong>no siempre hay WiFi ni 4G</strong>. LoRa transmite datos hasta <strong>15 km</strong> con muy bajo consumo de energía. Un gateway recoge todo y luego sincroniza cuando hay conexión.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">⚡</div>
+                <h4>Edge Computing: Procesar en el Lugar</h4>
+                <p>No necesitas subir todo a la nube. Una <strong>Raspberry Pi</strong> en la finca puede recibir datos de los sensores, ejecutar reglas simples ("si humedad &lt; 15% → activar riego") y <strong>guardar todo localmente</strong>.</p>
+            </div>
+        </div>
+
+        <div class="stat-grid grid-3" style="margin-top: 1.5rem;">
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">💧</div>
+                <h4>Monitoreo de Humedad</h4>
+                <p>Sensores capacitivos enterrados a 10, 20 y 40 cm. Miden la humedad real del suelo, no la del aire. <strong>Clave en La Guajira.</strong></p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🌡️</div>
+                <h4>Estación Meteorológica</h4>
+                <p>Temperatura, humedad relativa, velocidad del viento, precipitación y radiación UV. Datos cada 5 minutos, 24/7.</p>
+            </div>
+            <div class="stat-box" style="text-align:center;">
+                <div style="font-size: 2.5rem;">🔔</div>
+                <h4>Alertas Automáticas</h4>
+                <p>Reglas programadas: "Si temperatura &gt; 38°C y humedad del suelo &lt; 10% → enviar alerta al celular del agricultor."</p>
+            </div>
+        </div>
+
+        <div class="char-row" style="margin-top: 1.5rem;">
+            <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
+    <rect x="60" y="80" width="80" height="110" rx="10" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <circle cx="100" cy="115" r="18" fill="#2A9D8F" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="100" y1="97" x2="100" y2="85" stroke="#1A1A1A" stroke-width="3"/>
+    <circle cx="100" cy="82" r="5" fill="#E76F51" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="100" y1="82" x2="80" y2="65" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="80" cy="62" r="8" fill="#F4D35E" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="100" y1="82" x2="120" y2="65" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="120" cy="62" r="8" fill="#F4D35E" stroke="#1A1A1A" stroke-width="2"/>
+    <rect x="75" y="140" width="50" height="8" rx="4" fill="#2A9D8F" stroke="#1A1A1A" stroke-width="2"/>
+    <rect x="80" y="155" width="40" height="8" rx="4" fill="#E76F51" stroke="#1A1A1A" stroke-width="2"/>
+    <rect x="85" y="170" width="30" height="8" rx="4" fill="#F4D35E" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="70" y1="130" x2="50" y2="145" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="130" y1="130" x2="150" y2="145" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="48" cy="147" r="6" fill="#2A9D8F" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="152" cy="147" r="6" fill="#E76F51" stroke="#1A1A1A" stroke-width="2"/>
+</svg>
+            <div class="char-bubble">
+                <div class="char-name">📡 Sensor Inteligente</div>
+                "¡Soy un ESP32 con sensor de humedad y panel solar! Mido el suelo cada 5 minutos, envío los datos por LoRa al gateway de la finca, y si la humedad baja de 15%, ¡activo la bomba de riego automáticamente! Todo sin internet."
+            </div>
+        </div>
+    </div>
+</section>
+
+<div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;"><div style="border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 0.3rem 0; background: repeating-linear-gradient(90deg, var(--red-vintage) 0px, var(--red-vintage) 15px, var(--yellow-vintage) 15px, var(--yellow-vintage) 30px, var(--blue-vintage) 30px, var(--blue-vintage) 45px, var(--green-vintage) 45px, var(--green-vintage) 60px);"></div></div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 7. SIN INTERNET: EDGE + ALMACENAMIENTO LOCAL -->
+<!-- ════════════════════════════════════════════ -->
+<section id="sin-internet">
+    <div class="halftone-overlay"></div>
+    <div class="action-lines"></div>
+    <div class="section-inner">
+        <div class="section-label">Edge Computing</div>
+        <h2 class="section-title">¿Qué pasa si<br><span class="highlight">no hay internet?</span></h2>
+        <p class="section-subtitle">En La Guajira, muchas zonas rurales <strong>no tienen conexión estable</strong>. Pero la agricultura de precisión no depende de la nube. Aquí te explico cómo funciona <strong>sin internet</strong>.</p>
+        
+        <div class="stat-grid grid-2" style="max-width: 800px;">
+            <div class="stat-box">
+                <h4 style="color: var(--red-vintage);">📴 Problema Real</h4>
+                <p>En zonas rurales de La Guajira (Alta Guajira, Fonseca, Distracción), <strong>la conectividad es intermitente o nula</strong>. No puedes depender de enviar datos a la nube en tiempo real.</p>
+                <p style="margin-top: 0.5rem;"><strong>¿Solución?</strong> Procesar y almacenar localmente. La inteligencia vive en la parcela, no en un servidor lejano.</p>
+            </div>
+            <div class="stat-box">
+                <h4 style="color: var(--green-vintage);">💾 Almacenamiento Local</h4>
+                <p><strong>SQLite en Raspberry Pi:</strong> base de datos liviana que guarda miles de mediciones en la finca. No necesita servidor ni internet.</p>
+                <p style="margin-top: 0.5rem;"><strong>SD/USB:</strong> si no hay computadora, los sensores guardan en tarjeta SD y descargas los datos manualmente.</p>
+            </div>
+            <div class="stat-box">
+                <h4 style="color: var(--blue-vintage);">🧠 Procesamiento en el Borde (Edge)</h4>
+                <p>Un <strong>microcontrolador o mini-PC en la finca</strong> puede:</p>
+                <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
+                    <li>Leer sensores cada 5 minutos</li>
+                    <li>Ejecutar reglas: "si humedad &lt; 15% → activar riego"</li>
+                    <li>Correr modelos simples de predicción</li>
+                    <li>Generar alertas en pantalla local</li>
+                </ul>
+            </div>
+            <div class="stat-box">
+                <h4 style="color: var(--orange-vintage);">🔄 Sincronización Diferida</h4>
+                <p>Cuando hay conexión (WiFi, 4G o incluso manualmente con USB):</p>
+                <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
+                    <li>Los datos acumulados se suben a la nube</li>
+                    <li>Se actualizan los dashboards</li>
+                    <li>Se entrenan modelos con datos históricos</li>
+                    <li>Se descargan modelos mejorados al dispositivo local</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h4 style="text-align: center; font-family: 'Bangers', cursive; font-size: 1.4rem; letter-spacing: 0.05em; margin-bottom: 1rem;">Arquitectura Típica: <span class="highlight">Parcela sin Internet</span></h4>
+            <div style="background: var(--white-comic); border: 3px solid var(--ink); border-radius: 8px; padding: 1.5rem; box-shadow: var(--shadow-comic); font-size: 0.95rem;">
+                <p style="text-align: center; margin-bottom: 0.8rem;">
+                    <strong>Sensores</strong> (ESP32 + LoRa) → <strong>Gateway local</strong> (Raspberry Pi + SQLite) → <strong>Pantalla/Alerta</strong> (monitor o buzzer en la finca)
+                </p>
+                <p style="text-align: center; color: var(--ink-faded); font-size: 0.85rem;">
+                    ↓ cuando hay internet ↓<br>
+                    <strong>Nube</strong> (dashboard, modelos, reportes) ↔ descarga modelos mejorados
+                </p>
+            </div>
+        </div>
+
+        <div class="char-row" style="margin-top: 1.5rem;">
+            <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
+    <rect x="50" y="60" width="100" height="70" rx="8" fill="#1D3557" stroke="#1A1A1A" stroke-width="3"/>
+    <rect x="58" y="68" width="84" height="50" rx="4" fill="#2A9D8F"/>
+    <text x="100" y="88" text-anchor="middle" fill="white" font-size="10" font-family="monospace">Raspberry Pi</text>
+    <text x="100" y="102" text-anchor="middle" fill="#F4D35E" font-size="8" font-family="monospace">SQLite + Python</text>
+    <text x="100" y="113" text-anchor="middle" fill="white" font-size="7" font-family="monospace">Edge Computing</text>
+    <rect x="70" y="135" width="60" height="15" rx="3" fill="#E76F51" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="100" y="146" text-anchor="middle" fill="white" font-size="7" font-family="sans-serif">SD CARD</text>
+    <rect x="35" y="155" width="130" height="20" rx="10" fill="#F4D35E" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="100" y="169" text-anchor="middle" fill="#1A1A1A" font-size="8" font-family="sans-serif">¡Funciona sin internet!</text>
+    <line x1="100" y1="130" x2="100" y2="135" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="35" cy="95" r="12" fill="#E76F51" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="47" y1="95" x2="50" y2="95" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="35" y="98" text-anchor="middle" fill="white" font-size="8">📡</text>
+    <circle cx="165" cy="95" r="12" fill="#2A9D8F" stroke="#1A1A1A" stroke-width="2"/>
+    <line x1="153" y1="95" x2="150" y2="95" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="165" y="98" text-anchor="middle" fill="white" font-size="8">🖥️</text>
+</svg>
+            <div class="char-bubble">
+                <div class="char-name">🧙 Mago de los Datos</div>
+                "¡Tu finca no necesita WiFi para ser inteligente! Una Raspberry Pi de $200.000 COP con sensores por $50.000 puede medir, guardar datos, tomar decisiones y activar riego — todo sin internet. Cuando vuelva la señal, subes todo y entrenas modelos más potentes. ¡La inteligencia vive en el campo!"
             </div>
         </div>
     </div>
@@ -1197,6 +1360,11 @@
             <div class="qr-item"><img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.google.com/earth" alt="Google Earth"><span>Google Earth</span></div>
             <div class="qr-item"><img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.canva.com" alt="Canva"><span>Canva</span></div>
             <div class="qr-item"><img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://code.earthengine.google.com" alt="GEE"><span>Google Earth Engine</span></div>
+            <div class="qr-item"><img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.espressif.com/en/products/socs/esp32" alt="ESP32"><span>ESP32</span></div>
+            <div class="qr-item"><img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.raspberrypi.com/products/raspberry-pi-4-model-b/" alt="Raspberry Pi"><span>Raspberry Pi</span></div>
+            <div class="qr-item"><img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.lora-alliance.org/" alt="LoRa"><span>LoRa</span></div>
+            <div class="qr-item"><img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.sqlite.org/" alt="SQLite"><span>SQLite</span></div>
+            <div class="qr-item"><img class="qr-small" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.arduino.cc/" alt="Arduino"><span>Arduino</span></div>
         </div>
     </div>
 </section>
@@ -1218,6 +1386,12 @@
             Día 3: Usa ChatGPT para analizar datos climáticos · Día 4: Planifica un vuelo de dron con fotogrametría ·<br>
             Día 5: Crea un modelo simple de predicción de rendimiento · Día 6: Configura alertas de estrés hídrico ·<br>
             Día 7: ¡Primer mapa de agricultura de precisión de tu parcela! 🎉
+        </div>
+        <div class="caption-box" style="max-width: 700px; margin: 1rem auto; transform: rotate(0deg); background: var(--white-comic);">
+            <strong>📡 Tu Plan IoT en 5 Pasos:</strong><br>
+            Paso 1: Compra ESP32 + sensor de humedad (~$50.000 COP) · Paso 2: Programa lectura de datos con Arduino IDE ·<br>
+            Paso 3: Conecta vía LoRa al gateway (Raspberry Pi + SQLite) · Paso 4: Configura regla de riego automático ·<br>
+            Paso 5: ¡Tu parcela mide, decide y actúa — con o sin internet! 🌱
         </div>
         <div class="char-row" style="justify-content: center;">
             <svg viewBox="0 0 200 200" class="comic-character" xmlns="http://www.w3.org/2000/svg">
